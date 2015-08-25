@@ -11,8 +11,8 @@
     ],
 
     "definitions": {
-        "duration_unit_value": {
-            "$ref": "duration-unit-value-1.x.json"
+        "length_unit_value": {
+            "$ref": "length-unit-value-1.x.json"
         },
         "time_frame": {
             "$ref": "time-frame-1.x.json"
@@ -29,13 +29,13 @@
         "respiratory_stretch": {
             "allOf": [
                 {
-                    "$ref": "#/definitions/duration_unit_value"
+                    "$ref": "#/definitions/length_unit_value"
                 },
                 {
                     "properties": {
                         "unit": {
                             "enum": [
-                                "ms"
+                                "mm"
                             ]
                         }
                     }
