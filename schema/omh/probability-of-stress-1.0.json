@@ -1,0 +1,35 @@
+{
+    "$schema":"http://json-schema.org/draft-04/schema#",
+
+    "description":"This schema represents the output of a model developed by Kumar et. al. that uses inputs denoting physiological arousal to calculate the probability of a person's being stressed. The schema represents a measurement or the result of aggregating several measurements made over time (see Descriptive statistic schema for a list of aggregate measures)",
+    "type":"object",
+    "references": [
+        {
+            "description": "The Psychology Ontology code represents Physiological arousal, defined as Condition of alertness and readiness to respond as evidenced by physiological signs such as heart rate or blood pressure.",
+            "url": "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Physiological_Arousal"
+        }
+    ],
+
+    "definitions": {
+        "time_frame": {
+            "$ref": "time-frame-1.x.json"
+        },
+        "descriptive_statistic": {
+            "$ref": "descriptive-statistic-1.x.json"
+        }
+    },
+    "properties": {
+        "effective_time_frame": {
+            "$ref": "#/definitions/time_frame"
+        },
+        "probability_of_stress": {
+            "type":"number",
+            "minimum": 0,
+            "maximum": 1
+        },
+        "descriptive_statistic": {
+            "$ref": "#/definitions/descriptive_statistic"
+        }
+    },
+    "required": ["probability_of_stress"]
+}
