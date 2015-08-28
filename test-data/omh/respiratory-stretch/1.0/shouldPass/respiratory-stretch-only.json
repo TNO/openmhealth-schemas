@@ -1,0 +1,6 @@
+{
+    "respiratory_stretch": {
+        "value": 10,
+        "unit": "mm"
+    }
+}

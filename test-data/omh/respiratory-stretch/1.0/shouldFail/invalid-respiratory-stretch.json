@@ -1,0 +1,6 @@
+{
+    "respiratory_stretch": {
+        "value": 12,
+        "unit": "breath/min"
+    }
+}

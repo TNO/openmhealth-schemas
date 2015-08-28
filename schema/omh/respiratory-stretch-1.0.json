@@ -3,12 +3,6 @@
 
     "description": "Respiratory stretch is the change in the chest circumference during a respiration cycle.",
     "type": "object",
-    "references": [
-        {
-            "description": "",
-            "url": ""
-        }
-    ],
 
     "definitions": {
         "length_unit_value": {
