@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
 
-    "description": "Respiratory sinus arrhythmia (RSA) is a multimodal feature derived from both ECG and respiration that describes the variability in RR intervals due to respiration; inspiration shortens RR intervals and expiration grows RR intervals. It is computed by subtracting the shortest RR interval from the longest RR interval within each respiratory cycle, using the peak-valley method [17].",
+    "description": "Respiratory sinus arrhythmia (RSA) is a multimodal feature derived from both ECG and respiration that describes the variability in RR intervals due to respiration; inspiration shortens RR intervals and expiration grows RR intervals. It is computed by subtracting the shortest RR interval from the longest RR interval within each respiratory cycle, using the peak-valley method.",
     "type": "object",
     "references": [
         {
