@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "This schema represents a person's galvanic skin response (GSR), also known as EDA (electrodermal activity), EDR (electrodermal response), EDL (electrodermal level), SCA (skin conductance activity), SCR (skin conductance response), etc., either a single measurement, or the result of aggregating several measurements made over time (see Descriptive statistic schema for a list of aggregate measures)",
+    "type": "object",
+    "references": [
+        {
+            "description": "The SNOMED code represents galvanic skin response (observable entity)",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/24672009"
+        }
+    ],
+
+    "definitions": {
+        "conductance_unit_value": {
+            "$ref": "conductance-unit-value-1.x.json"
+        },
+        "time_frame": {
+            "$ref": "time-frame-1.x.json"
+        },
+        "descriptive_statistic": {
+            "$ref": "descriptive-statistic-1.x.json"
+        },
+        "measurement_location": {
+            "type": "string",
+            "enum": [
+
+            ]
+        }
+    },
+
+    "properties": {
+        "galvanic_skin_response": {
+            "$ref": "#/definitions/temperature_unit_value"
+        },
+        "effective_time_frame": {
+            "$ref": "#/definitions/time_frame"
+        },
+        "descriptive_statistic": {
+            "$ref": "#/definitions/descriptive_statistic"
+        },
+        "measurement_location": {
+            "$ref": "#/definitions/measurement_location"
+        }
+    },
+
+    "required": ["galvanic_skin_response"]
+}
