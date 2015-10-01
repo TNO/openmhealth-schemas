@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
 
-    "description": "Respiratory stretch is the change in the chest circumference during a respiration cycle.",
+    "description": "Respiratory stretch is the change in the chest circumference during a respiration cycle (i.e., the difference between the maximum (legitimate) amplitude and the minimum (legitimate) amplitude of the signal within a respiration cycle. (Hovsepian et al. 2015)",
     "type": "object",
 
     "definitions": {
@@ -21,7 +21,20 @@
 
     "properties": {
         "respiratory_stretch": {
-            "$ref": "#/definitions/length_unit_value"
+            "allOf": [
+                {
+                    "$ref": "#/definitions/length_unit_value"
+                },
+                {
+                    "properties": {
+                        "unit": {
+                            "enum": [
+                                "mm"
+                            ]
+                        }
+                    }
+                }
+            ]
         },
         "effective_time_frame": {
             "$ref": "#/definitions/time_frame"
