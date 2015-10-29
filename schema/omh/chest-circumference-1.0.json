@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "  inspiration shortens RR intervals and expiration grows RR intervals. It is computed by subtracting the shortest RR interval from the longest RR interval within each respiratory cycle, using the peak-valley method.",
+    "type": "object",
+    "references": [
+        {
+            "description": "The XXX code represents ",
+            "url": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62239"
+        }
+    ],
+
+    "definitions": {
+        "length_unit_value": {
+            "$ref": "length-unit-value-1.x.json"
+        },
+        "time_frame": {
+            "$ref": "time-frame-1.x.json"
+        },
+        "descriptive_statistic": {
+            "$ref": "descriptive-statistic-1.x.json"
+        }
+    },
+
+    "properties": {
+        "chest_circumference": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/length_unit_value"
+                },
+                {
+                    "properties": {
+                        "unit": {
+                            "enum": [
+                                "mm",
+                                "cm"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "effective_time_frame": {
+            "$ref": "#/definitions/time_frame"
+        },
+        "descriptive_statistic": {
+            "$ref": "#/definitions/descriptive_statistic"
+        }
+    },
+
+    "required": ["chest_circumference"],
+    "additionalProperties": false
+}
