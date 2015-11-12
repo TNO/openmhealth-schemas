@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "This schema represents illuminance.",
+    "references": [
+        {
+            "description": "The SNOMED code represents ",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "unit-value-1.x.json"
+        },
+        {
+            "properties": {
+                "unit": {
+                    "references": [
+                        {
+                            "description": "The unit of measure of the element. Basic unit is lux (lx).",
+                            "url": "http://unitsofmeasure.org/ucum.html#datyp2apdxatblxmp"
+                        }
+                    ],
+                    "enum": [
+                        "lx"
+                    ]
+                }
+            }
+        }
+    ]
+}
