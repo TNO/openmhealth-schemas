@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
-    "description": "This schema represents conductance",
+    "description": "This schema represents electric conductance",
     "references": [
         {
             "description": "The SNOMED code represents ",
