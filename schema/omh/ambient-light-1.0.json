@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "This schema represents the ambient light, either a single measurement, or the result of aggregating several measurements made over time (see Descriptive schema for a list of aggregate measures)",
+    "type": "object",
+    "references": [
+        {
+            "description": "The SNOMED code represents Ambient light (observable entity)",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/250825003"
+        }
+    ],
+
+    "definitions": {
+        "illuminance_unit_value": {
+            "$ref": "illuminance-unit-value-1.x.json"
+        },
+        "time_frame": {
+            "$ref": "time-frame-1.x.json"
+        },
+        "descriptive_statistic": {
+            "$ref": "descriptive-statistic-1.x.json"
+        }
+    },
+
+    "properties": {
+        "ambient_light": {
+            "$ref": "#/definitions/illuminance_unit_value"
+        },
+        "effective_time_frame": {
+            "$ref": "#/definitions/time_frame"
+        },
+        "descriptive_statistic": {
+            "$ref": "#/definitions/descriptive_statistic"
+        }
+    },
+
+    "required": ["ambient_light"]
+}
