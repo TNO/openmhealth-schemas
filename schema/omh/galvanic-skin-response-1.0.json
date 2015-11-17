@@ -19,29 +19,21 @@
         },
         "descriptive_statistic": {
             "$ref": "descriptive-statistic-1.x.json"
-        },
-        "measurement_location": {
-            "type": "string",
-            "enum": [
-
-            ]
         }
     },
 
     "properties": {
         "galvanic_skin_response": {
-            "$ref": "#/definitions/temperature_unit_value"
+            "$ref": "#/definitions/conductance_unit_value"
         },
         "effective_time_frame": {
             "$ref": "#/definitions/time_frame"
         },
         "descriptive_statistic": {
             "$ref": "#/definitions/descriptive_statistic"
-        },
-        "measurement_location": {
-            "$ref": "#/definitions/measurement_location"
         }
     },
 
-    "required": ["galvanic_skin_response"]
+    "required": ["galvanic_skin_response"],
+    "additionalProperties": false
 }
