@@ -1,13 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
-    "description": "This schema represents electric conductance",
-    "references": [
-        {
-            "description": "The SNOMED code represents ",
-            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/"
-        }
-    ],
+    "description": "This schema represents electric conductance, a measure of how easy the electric current flows in an electrical circuit.",
+
     "allOf": [
         {
             "$ref": "unit-value-1.x.json"
@@ -22,9 +17,10 @@
                         }
                     ],
                     "enum": [
-                        "S",
+                        "nS",
+                        "uS",
                         "mS",
-                        "uS"
+                        "S"
                     ]
                 }
             }
