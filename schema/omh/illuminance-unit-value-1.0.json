@@ -1,13 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
-    "description": "This schema represents illuminance.",
-    "references": [
-        {
-            "description": "The SNOMED code represents ",
-            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/"
-        }
-    ],
+    "description": "This schema represents illuminance, the total luminous flux incident on a surface, per unit area.",
+
     "allOf": [
         {
             "$ref": "unit-value-1.x.json"
