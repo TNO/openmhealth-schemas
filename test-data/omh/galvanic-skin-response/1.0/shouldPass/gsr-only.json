@@ -1,0 +1,6 @@
+{
+    "galvanic_skin_response" : {
+        "unit": "uS",
+        "value": 9.2
+    }
+}

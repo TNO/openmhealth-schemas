@@ -1,0 +1,13 @@
+{
+    "galvanic_skin_response" : {
+        "unit": "uS",
+        "value": 9.8
+    },
+    "effective_time_frame": {
+        "time_interval": {
+            "start_date_time": "2015-02-05T07:25:00Z",
+            "end_date_time": "2015-02-05T09:25:00Z"
+        }
+    },
+    "descriptive_statistic": "maximum"
+}
