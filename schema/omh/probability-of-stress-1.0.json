@@ -23,9 +23,7 @@
             "$ref": "#/definitions/time_frame"
         },
         "probability_of_stress": {
-            "type":"number",
-            "minimum": 0,
-            "maximum": 1
+            "type": "number"
         },
         "descriptive_statistic": {
             "$ref": "#/definitions/descriptive_statistic"
