@@ -1,0 +1,15 @@
+{
+    "rr_interval_low_frequency_energy": {
+        "value": 0.444,
+        "unit": "ms"
+    },
+    "rr_interval_medium_frequency_energy": {
+        "value": 0.5444,
+        "unit": "ms^2"
+    },
+    "rr_interval_high_frequency_energy": {
+        "value": 0.65444,
+        "unit": "ms^2"
+    },
+    "rr_interval_low_high_frequency_energy_ratio": 0.5566
+}
