@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "This schema represents the low, medium and high frequency energy in RR interval time series data.",
+    "type": "object",
+
+
+    "definitions": {
+        "unit_value": {
+            "$ref": "unit-value-1.x.json"
+        },
+        "time_frame": {
+            "$ref": "time-frame-1.x.json"
+        },
+        "descriptive_statistic": {
+            "$ref": "descriptive-statistic-1.x.json"
+        }
+    },
+
+    "properties": {
+        "rr_interval_low_frequency_energy": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/unit_value"
+                },
+                {
+                    "properties": {
+                        "unit": {
+                            "enum": [
+                                "ms^2"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "rr_interval_medium_frequency_energy": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/unit_value"
+                },
+                {
+                    "properties": {
+                        "unit": {
+                            "enum": [
+                                "ms^2"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "rr_interval_high_frequency_energy": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/unit_value"
+                },
+                {
+                    "properties": {
+                        "unit": {
+                            "enum": [
+                                "ms^2"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "rr_interval_low_high_frequency_energy_ratio": {
+            "type": "number"
+        },
+        "effective_time_frame": {
+            "$ref": "#/definitions/time_frame"
+        },
+        "descriptive_statistic": {
+            "$ref": "#/definitions/descriptive_statistic"
+        }
+    },
+
+    "required": [
+        "rr_interval_low_frequency_energy",
+        "rr_interval_medium_frequency_energy",
+        "rr_interval_high_frequency_energy",
+        "rr_interval_low_high_frequency_energy_ratio"
+    ]
+}
