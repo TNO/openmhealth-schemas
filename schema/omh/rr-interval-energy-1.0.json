@@ -14,59 +14,36 @@
         },
         "descriptive_statistic": {
             "$ref": "descriptive-statistic-1.x.json"
+        },
+        "rr_interval_frequency_energy": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/unit_value"
+                },
+                {
+                    "properties": {
+                        "unit": {
+                            "enum": [
+                                "ms^2"
+                            ]
+                        }
+                    }
+                }
+            ]
         }
     },
 
     "properties": {
-        "rr_interval_low_frequency_energy": {
-            "allOf": [
-                {
-                    "$ref": "#/definitions/unit_value"
-                },
-                {
-                    "properties": {
-                        "unit": {
-                            "enum": [
-                                "ms^2"
-                            ]
-                        }
-                    }
-                }
-            ]
+        "low_frequency_energy": {
+            "$ref": "#/definitions/rr_interval_frequency_energy"
         },
-        "rr_interval_medium_frequency_energy": {
-            "allOf": [
-                {
-                    "$ref": "#/definitions/unit_value"
-                },
-                {
-                    "properties": {
-                        "unit": {
-                            "enum": [
-                                "ms^2"
-                            ]
-                        }
-                    }
-                }
-            ]
+        "medium_frequency_energy": {
+            "$ref": "#/definitions/rr_interval_frequency_energy"
         },
-        "rr_interval_high_frequency_energy": {
-            "allOf": [
-                {
-                    "$ref": "#/definitions/unit_value"
-                },
-                {
-                    "properties": {
-                        "unit": {
-                            "enum": [
-                                "ms^2"
-                            ]
-                        }
-                    }
-                }
-            ]
+        "high_frequency_energy": {
+            "$ref": "#/definitions/rr_interval_frequency_energy"
         },
-        "rr_interval_low_high_frequency_energy_ratio": {
+        "low_high_frequency_energy_ratio": {
             "type": "number"
         },
         "effective_time_frame": {
@@ -78,9 +55,9 @@
     },
 
     "required": [
-        "rr_interval_low_frequency_energy",
-        "rr_interval_medium_frequency_energy",
-        "rr_interval_high_frequency_energy",
-        "rr_interval_low_high_frequency_energy_ratio"
+        "low_frequency_energy",
+        "medium_frequency_energy",
+        "high_frequency_energy",
+        "low_high_frequency_energy_ratio"
     ]
 }
