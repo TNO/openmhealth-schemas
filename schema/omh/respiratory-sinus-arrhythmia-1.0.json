@@ -53,5 +53,5 @@
         }
     },
 
-    "required": ["respiratory_sinus_arrhythmia"]
+    "required": ["respiratory_sinus_arrhythmia","effective_time_frame"]
 }

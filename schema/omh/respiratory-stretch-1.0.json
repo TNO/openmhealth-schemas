@@ -47,5 +47,5 @@
         }
     },
 
-    "required": ["respiratory_stretch"]
+    "required": ["respiratory_stretch","effective_time_frame"]
 }

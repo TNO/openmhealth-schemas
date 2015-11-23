@@ -58,6 +58,7 @@
         "low_frequency_energy",
         "medium_frequency_energy",
         "high_frequency_energy",
-        "low_high_frequency_energy_ratio"
+        "low_high_frequency_energy_ratio",
+        "effective_time_frame"
     ]
 }
