@@ -15,7 +15,7 @@
         "descriptive_statistic": {
             "$ref": "descriptive-statistic-1.x.json"
         },
-        "rr_interval_frequency_energy": {
+        "interval_energy_unit_value": {
             "allOf": [
                 {
                     "$ref": "#/definitions/unit_value"
@@ -35,13 +35,13 @@
 
     "properties": {
         "low_frequency_energy": {
-            "$ref": "#/definitions/rr_interval_frequency_energy"
+            "$ref": "#/definitions/interval_energy_unit_value"
         },
         "medium_frequency_energy": {
-            "$ref": "#/definitions/rr_interval_frequency_energy"
+            "$ref": "#/definitions/interval_energy_unit_value"
         },
         "high_frequency_energy": {
-            "$ref": "#/definitions/rr_interval_frequency_energy"
+            "$ref": "#/definitions/interval_energy_unit_value"
         },
         "low_high_frequency_energy_ratio": {
             "type": "number"
