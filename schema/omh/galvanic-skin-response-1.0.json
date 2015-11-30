@@ -34,5 +34,8 @@
         }
     },
 
-    "required": ["galvanic_skin_response","effective_time_frame"]
+    "required": [
+        "galvanic_skin_response",
+        "effective_time_frame"
+    ]
 }

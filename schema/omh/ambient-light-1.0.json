@@ -34,5 +34,8 @@
         }
     },
 
-    "required": ["ambient_light","effective_time_frame"]
+    "required": [
+        "ambient_light",
+        "effective_time_frame"
+    ]
 }

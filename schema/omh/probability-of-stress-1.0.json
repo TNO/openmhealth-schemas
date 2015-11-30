@@ -29,5 +29,8 @@
             "$ref": "#/definitions/descriptive_statistic"
         }
     },
-    "required": ["probability_of_stress","effective_time_frame"]
+    "required": [
+        "probability_of_stress",
+        "effective_time_frame"
+    ]
 }

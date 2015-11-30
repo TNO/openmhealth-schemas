@@ -37,5 +37,8 @@
         }
     },
 
-    "required": ["inspiratory_expiratory_time_ratio","effective_time_frame"]
+    "required": [
+        "inspiratory_expiratory_time_ratio",
+        "effective_time_frame"
+    ]
 }
