@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
 
-    "description": "This schema represents the ambient light.",
+    "description": "This schema represents measurement of ambient light.",
     "type": "object",
     "references": [
         {

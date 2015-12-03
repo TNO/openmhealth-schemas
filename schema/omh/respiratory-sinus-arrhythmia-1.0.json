@@ -6,7 +6,7 @@
     "references": [
         {
             "description": "The NCIT code represents Sinus Arrhythmia by ECG Finding (synonym: Respiratory Sinus Arrhythmia)",
-            "url": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62239"
+            "url": " https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=15.10d&ns=NCI_Thesaurus&code=C62239"
         }
     ],
 

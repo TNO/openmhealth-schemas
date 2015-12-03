@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
 
-    "description": "This schema represents a person's galvanic skin response (GSR), also known as EDA (electrodermal activity), EDR (electrodermal response), EDL (electrodermal level), SCA (skin conductance activity), SCR (skin conductance response).",
+    "description": "This schema represents measurement of a person's galvanic skin response (GSR), also known as EDA (electrodermal activity), EDR (electrodermal response), EDL (electrodermal level), SCA (skin conductance activity), SCR (skin conductance response).",
     "type": "object",
     "references": [
         {
