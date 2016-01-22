@@ -1,0 +1,31 @@
+{
+   "$schema":"http://json-schema.org/draft-04/schema#",
+   "type":"object",
+   "description":"This schema represents a person's LDL cholesterol level.",
+   "references":[
+      {
+            "description": "The SNOMED code represents Low density lipoprotein (LDL) cholesterol",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/102739008"
+      }
+   ],
+   "definitions":{
+      "unit_value":{
+         "$ref":"http://www.openmhealth.org/schema/omh/unit-value-1.x.json"
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/unit_value"
+      },
+      {
+         "properties":{
+            "unit":{
+               "enum":[
+                  "mg/dL",
+                  "mmol/L"
+               ]
+            }
+         }
+      }
+   ]
+}

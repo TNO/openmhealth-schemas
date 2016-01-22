@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "This schema represents a person's cholesterol level as a combination of LDL, HDL and Triglyceride levels, either a single blood pressure measurement, or the result of aggregating several measurements made over time (see Numeric descriptor schema for a list of aggregate measures)",
+    "type": "object",
+    "references": [
+        {
+            "description": "The SNOMED code represents cholesterol level (finding)",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/365793008"
+        }
+    ],
+    "definitions": {
+        "blood_ldl_cholesterol": {
+            "$ref": "ldl-cholesterol-0.1.json"
+        },
+        "blood_hdl_cholesterol": {
+            "$ref": "hdl-cholesterol-0.1.json"
+        },
+        "blood_triglycerides": {
+            "$ref": "triglycerides-0.1.json"
+        },
+        "blood_total_cholesterol": {
+            "$ref": "total-cholesterol-0.1.json"
+        },
+        "specimen_source": {
+            "$ref": "http://www.openmhealth.org/schema/omh/specimen-source-1.x.json"
+        },
+        "time_frame": {
+            "$ref": "http://www.openmhealth.org/schema/omh/time-frame-1.x.json"
+        },
+        "temporal_relationship_to_meal": {
+            "$ref": "http://www.openmhealth.org/schema/omh/temporal-relationship-to-meal-1.x.json"
+        },
+        "temporal_relationship_to_sleep": {
+            "$ref": "http://www.openmhealth.org/schema/omh/temporal-relationship-to-sleep-1.x.json"
+        },
+        "descriptive_statistic": {
+            "$ref": "http://www.openmhealth.org/schema/omh/descriptive-statistic-1.x.json"
+        }
+    },
+
+    "properties": {
+        "blood_ldl_cholesterol": {
+            "$ref": "#/definitions/blood_ldl_cholesterol"
+        },
+        "blood_hdl_cholesterol": {
+            "$ref": "#/definitions/blood_hdl_cholesterol"
+        },
+        "blood_triglycerides": {
+            "$ref": "#/definitions/blood_triglycerides"
+        },
+        "blood_total_cholesterol": {
+            "$ref": "#/definitions/blood_total_cholesterol"
+        },
+       "specimen_source": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/specimen_source"
+                },
+                {
+                    "enum": [
+                        "interstitial fluid",
+                        "capillary blood",
+                        "plasma",
+                        "serum",
+                        "whole blood"
+                    ]
+                }
+            ]
+        },
+        "effective_time_frame": {
+            "$ref": "#/definitions/time_frame"
+        },
+        "temporal_relationship_to_meal": {
+            "$ref": "#/definitions/temporal_relationship_to_meal"
+        },
+        "temporal_relationship_to_sleep": {
+            "$ref": "#/definitions/temporal_relationship_to_sleep"
+        },
+        "descriptive_statistic": {
+            "$ref": "#/definitions/descriptive_statistic"
+        },
+        "user_notes": {
+            "type": "string"
+        }
+    }
+}
