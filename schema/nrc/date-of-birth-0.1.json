@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "This schema represents a person's date of birth",
+    "type": "object",
+    
+    "references": [
+        {
+            "description": "The SNOMED code represents Date of birth (observable entity)",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/184099003"
+        }
+    ],
+  
+    "$ref": "full-date-1.0.json"
+}

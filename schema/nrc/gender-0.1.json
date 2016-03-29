@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "This schema represents a person's gender",
+    "type": "object",
+
+    "references": [
+        {
+            "description": "The SNOMED code represents Gender (observable entity)",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/263495000"
+        },
+        {
+            "value": "male",
+            "description": "The SNOMED code represent masculine gender",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/703117000
+        },
+        {
+            "value": "female",
+            "description": "The SNOMED code represent feminine gender",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/703118005
+        },
+        {
+            "value": "unknown",
+            "description": "The SNOMED code represents gender unknown",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/394743007"
+        }
+    ],
+    "enum": [
+        "male",
+        "female",
+        "unknown"
+    ]
+
+}
